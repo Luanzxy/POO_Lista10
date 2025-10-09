@@ -77,13 +77,13 @@ class View:
         return ProfissionalDAO.listar()
 
     @staticmethod
-    def profissional_inserir(nome, email, fone):
-        profissional = Profissional(0, nome, email, fone)
+    def profissional_inserir(nome, especialidade, conselho):
+        profissional = Profissional(0, nome, especialidade, conselho)
         ProfissionalDAO.inserir(profissional)
 
     @staticmethod
-    def profissional_atualizar(id, nome, email, fone):
-        profissional = Profissional(id, nome, email, fone)
+    def profissional_atualizar(id, nome, especialidade, conselho):
+        profissional = Profissional(id, nome, especialidade, conselho)
         ProfissionalDAO.atualizar(profissional)
 
     @staticmethod
